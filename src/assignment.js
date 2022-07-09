@@ -60,12 +60,11 @@ assignment.countEvenNumbers = countEvenNumbers;
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers){ 
-  // multiply the given celsius value by 9/5 and add 32
   let fahrenheit = [];
   for (let i = 0; i < arrayOfNumbers.length; i++) {
     const value = (arrayOfNumbers[i] * 1.8) + 32
     fahrenheit.push(Math.trunc(value));
-    // Math.trunc(arrayOfNumbers[i] * 1.8) + 32);
+
   }
     return fahrenheit;
 }
